@@ -8,6 +8,7 @@ import { map, compact } from 'lodash';
  */
 import { Fragment } from '@wordpress/element';
 import { __experimentalTreeGrid as TreeGrid } from '@wordpress/components';
+import { __ } from '@wordpress/i18n';
 
 /**
  * Internal dependencies
@@ -105,7 +106,10 @@ function BlockNavigationRows( props ) {
  */
 export default function( props ) {
 	return (
-		<TreeGrid className="block-editor-block-navigation-grid">
+		<TreeGrid
+			className="block-editor-block-navigation-grid"
+			aria-label={ __( 'Block navigation structure' ) }
+		>
 			<BlockNavigationRows { ...props } />
 		</TreeGrid>
 	);
