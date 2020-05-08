@@ -7,7 +7,7 @@
 
 ## Development guidelines
 
-`TreeGrid`, `TreeGridRow`, and `TreeGridCell` are components used to create a tree hierarchy. They're not visually styled components, but instead help with adding keyboard navigation and roving tab index behaviours to tree grid structures.
+`TreeGrid`, `TreeGridRow`, and `TreeGridCell` are components used to create a tree hierarchy. They're not visually styled components, but instead help with adding keyboard navigation and roving tab index behaviors to tree grid structures.
 
 A tree grid is a hierarchical 2 dimensional UI component, for example it could be used to implement a file system browser.
 
@@ -102,7 +102,7 @@ An integer value that represents the total number of items in the set ... that i
 
 ###### isExpanded
 
-An optional value that designates whether a row is expanded or collapsed. Currently this value only sets the correct aria-expanded property on a row, it has no other built-in behaviour.
+An optional value that designates whether a row is expanded or collapsed. Currently this value only sets the correct aria-expanded property on a row, it has no other built-in behavior.
 
 - Type: `Boolean`
 - Required: No

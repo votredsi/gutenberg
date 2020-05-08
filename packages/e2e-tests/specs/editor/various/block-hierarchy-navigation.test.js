@@ -121,7 +121,7 @@ describe( 'Navigating the block hierarchy', () => {
 
 		await insertBlock( 'Paragraph' );
 
-		// Add content so there is a block in the hierachy.
+		// Add content so there is a block in the hierarchy.
 		await page.keyboard.type( textString );
 
 		// Create an image block too.
