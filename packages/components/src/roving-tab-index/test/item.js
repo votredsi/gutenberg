@@ -19,7 +19,7 @@ const TestButton = forwardRef( ( { ...props }, ref ) => (
 ) );
 
 describe( 'RovingTabIndexItem', () => {
-	it( 'requires RovingTabIndex to be declared as a parent component somewhere in the component heirarchy', () => {
+	it( 'requires RovingTabIndex to be declared as a parent component somewhere in the component hierarchy', () => {
 		expect( () =>
 			TestRenderer.create( <RovingTabIndexItem as={ TestButton } /> )
 		).toThrow();
@@ -48,7 +48,7 @@ describe( 'RovingTabIndexItem', () => {
 		expect( renderer.toJSON() ).toMatchSnapshot();
 	} );
 
-	it( 'allows children to bue declared using a child render function as an alternative to `as`', () => {
+	it( 'allows children to be declared using a child render function as an alternative to `as`', () => {
 		const renderer = TestRenderer.create(
 			<RovingTabIndex>
 				<RovingTabIndexItem>

@@ -19,7 +19,7 @@ const TestButton = forwardRef( ( { ...props }, ref ) => (
 ) );
 
 describe( 'TreeGridCell', () => {
-	it( 'requires TreeGrid to be declared as a parent component somewhere in the component heirarchy', () => {
+	it( 'requires TreeGrid to be declared as a parent component somewhere in the component hierarchy', () => {
 		expect( () =>
 			TestRenderer.create(
 				<TreeGridCell>
