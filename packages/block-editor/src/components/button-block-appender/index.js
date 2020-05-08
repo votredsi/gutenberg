@@ -21,7 +21,8 @@ function ButtonBlockAppender(
 		rootClientId,
 		className,
 		__experimentalSelectBlockOnInsert: selectBlockOnInsert,
-		...props
+		onFocus,
+		tabIndex,
 	},
 	ref
 ) {
@@ -55,6 +56,8 @@ function ButtonBlockAppender(
 					<Tooltip text={ label }>
 						<Button
 							ref={ ref }
+							onFocus={ onFocus }
+							tabIndex={ tabIndex }
 							className={ classnames(
 								className,
 								'block-editor-button-block-appender'
@@ -68,7 +71,6 @@ function ButtonBlockAppender(
 							}
 							disabled={ disabled }
 							label={ label }
-							{ ...props }
 						>
 							<VisuallyHidden as="span">{ label }</VisuallyHidden>
 							<Icon icon={ create } />

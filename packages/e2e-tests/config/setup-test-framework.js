@@ -226,6 +226,7 @@ async function runAxeTestsForBlockEditor() {
 		// See: https://github.com/WordPress/gutenberg/pull/15018.
 		disabledRules: [
 			'aria-allowed-role',
+			'aria-allowed-attr',
 			'aria-hidden-focus',
 			'aria-input-field-name',
 			'aria-valid-attr-value',
@@ -247,8 +248,8 @@ async function runAxeTestsForBlockEditor() {
 			// These properties were not included in the 1.1 spec
 			// through error, they should be allowed on role="row":
 			// https://github.com/w3c/aria/issues/558
-			'[role="row"][aria-setsize]',
-			'[role="row"][aria-posinset]',
+			'[role="treegrid"] [aria-posinset]',
+			'[role="treegrid"] [aria-setsize]',
 		],
 	} );
 }
